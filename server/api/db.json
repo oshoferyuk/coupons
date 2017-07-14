@@ -1,0 +1,76 @@
+{
+  "coupons": [
+    {
+      "image": "image url",
+      "offerID": "PG100001124",
+      "type": "Rebate",
+	  "brand": "Bounty",
+	  "description": "Bounty Paper Towels",
+	  "start_date":"April 20,2017",
+	  "end_date":"April 30,2017",
+	  "category":"Household",
+	  "Activation Limit":"0/350",
+	  "status":"Upcomming"
+    },
+	{
+      "image": "image url",
+      "offerID": "PG100001124",
+      "type": "Rebate",
+	  "brand": "Crest",
+	  "description": "Bounty Paper Towels",
+	  "start_date":"April 20,2017",
+	  "end_date":"April 30,2017",
+	  "category":"Household",
+	  "Activation Limit":"0/350",
+	  "status":"Upcomming"
+    },
+	{
+      "image": "image url",
+      "offerID": "PG100001124",
+      "type": "Print",
+	  "brand": "Crest",
+	  "description": "Bounty Paper Towels",
+	  "start_date":"April 20,2017",
+	  "end_date":"April 30,2017",
+	  "category":"Household",
+	  "Activation Limit":"0/350",
+	  "status":"Upcomming"
+    },
+	{
+      "image": "image url",
+      "offerID": "PG100001124",
+      "type": "Rebate",
+	  "brand": "Bounty",
+	  "description": "Bounty Paper Towels",
+	  "start_date":"April 20,2017",
+	  "end_date":"April 30,2017",
+	  "category":"Household",
+	  "Activation Limit":"0/350",
+	  "status":"Upcomming"
+    },
+	{
+      "image": "image url",
+      "offerID": "PG100001124",
+      "type": "Print",
+	  "brand": "Bounty",
+	  "description": "Bounty Paper Towels",
+	  "start_date":"April 20,2017",
+	  "end_date":"April 30,2017",
+	  "category":"Health & Beauty",
+	  "Activation Limit":"0/450",
+	  "status":"Upcomming"
+    }    
+  ],
+  "info": {
+	"Audience Segments":["Suburban Mom", "Young Professional", "Financially Dependent", "New Mom", "Family Planner", "Deal Hunter", "Brand Loyalist", "Single male"],
+	"Campaign status":["Live","Draft","Pending", "Completed"],
+	"Categories":["Family Care", "Household", "Beauty", "Health & Grooming"],
+	"Brands":["Always","Ambipur","Ariel","Bounty","Braun","Charmin","Crest","Dawn","Dwny","Febreeze","Gain","Gillette","Head & Shoulders","Luvs", "olay", "old spice", "Oral-b", "pampers", "Pantene Pro-v","Swiffer","Tide", "Vicks"]
+  },
+  "product_selector":{
+	"sector":["Baby Feminine and Family Care", "Beauty Care", "Corporate", "Fabric & Home Care", "Grooming", "Health Care", "Other Products"],
+	"brands":["As(Private Label)", "Bouty", "Charmin", "Codi", "Lirio", "Puffs", "Tempo"],
+	"versions":["Base", "Basic", "Extra SOft", "Super Duty", "DuraTowel", "Bounty with Dawn"],
+	"form":["Roll"]
+  }
+}

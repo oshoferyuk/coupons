@@ -1,0 +1,7 @@
+<div class="mdl-grid coupons">
+  <div class="mdl-cell mdl-cell--6-col">
+    <coupons-list [coupons]="coupons | async"
+                  (selected)="selectItem($event)" (deleted)="deleteItem($event)">
+    </coupons-list>
+  </div>
+</div>
