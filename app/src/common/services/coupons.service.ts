@@ -11,7 +11,7 @@ const BASE_URL = 'http://localhost:3000/coupons/';
 const HEADER = { headers: new Headers({ 'Content-Type': 'application/json' }) };
 
 @Injectable()
-export class ItemsService {
+export class CouponsService {
   coupons: Observable<any>;
 
   constructor(private http: Http, private store: Store<AppStore>) {
@@ -21,28 +21,21 @@ export class ItemsService {
   loadItems() {
     this.http.get(BASE_URL)
       .map(res => res.json())
-      .map(payload => ({ type: 'ADD_ITEMS', payload }))
+      .map(payload => ({ type: 'GET_COUPONS', payload }))
       .subscribe(action => this.store.dispatch(action));
   }
 
-  saveItem(item: Coupon) {
-    (item.id) ? this.updateItem(item) : this.createItem(item);
-  }
-
   createItem(item: Coupon) {
+    console.log('start');
     this.http.post(`${BASE_URL}`, JSON.stringify(item), HEADER)
       .map(res => res.json())
-      .map(payload => ({ type: 'CREATE_ITEM', payload }))
+      .map(payload => ({ type: 'CREATE_COUPON', payload }))
       .subscribe(action => this.store.dispatch(action));
   }
 
   updateItem(item: Coupon) {
-    this.http.put(`${BASE_URL}${item.id}`, JSON.stringify(item), HEADER)
-      .subscribe(action => this.store.dispatch({ type: 'UPDATE_ITEM', payload: item }));
+    //this.http.put(`${BASE_URL}${item.id}`, JSON.stringify(item), HEADER)
+      //.subscribe(action => this.store.dispatch({ type: 'UPDATE_ITEM', payload: item }));
   }
 
-  deleteItem(item: Coupon) {
-    this.http.delete(`${BASE_URL}${item.id}`)
-      .subscribe(action => this.store.dispatch({ type: 'DELETE_ITEM', payload: item }));
-  }
 }

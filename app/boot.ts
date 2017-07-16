@@ -4,7 +4,7 @@ import {StoreModule} from '@ngrx/store';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {StoreLogMonitorModule, useLogMonitor} from '@ngrx/store-log-monitor';
 import {coupons} from './src/common/stores/coupons.store';
-import {selectedItem} from './src/common/stores/selectedItem.store';
+import {couponsFilter} from './src/common/stores/couponsFilter.store';
 
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
@@ -14,6 +14,7 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {App} from './src/app';
 import {Coupons} from './src/coupons/coupons.component';
+import {EditCoupon} from './src/editcoupon/coupon-edit.component';
 import {routes} from './routes';
 
 @NgModule({
@@ -23,7 +24,7 @@ import {routes} from './routes';
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    StoreModule.provideStore({coupons, selectedItem}),
+    StoreModule.provideStore({coupons, couponsFilter}),
     StoreDevtoolsModule.instrumentStore({
       monitor: useLogMonitor({
         visible: false,
@@ -32,7 +33,7 @@ import {routes} from './routes';
     }),
     StoreLogMonitorModule
   ],
-  declarations: [App, Coupons],
+  declarations: [App, Coupons, EditCoupon],
   //providers: [GadgetService],
   providers: [],
   bootstrap: [App]

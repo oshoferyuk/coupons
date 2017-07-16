@@ -1,7 +1,11 @@
+<a [routerLink]="['new']">new</a>
+
+<h5>Filter:</h5>
+<button (click)="setFilter()">Set Filters</button>
 <div class="mdl-grid coupons">
   <div class="mdl-cell mdl-cell--6-col">
-    <coupons-list [coupons]="coupons | async"
-                  (selected)="selectItem($event)" (deleted)="deleteItem($event)">
+    <coupons-list [coupons]="coupons$ | async"
+                  (order)="orderCoupons($event)">
     </coupons-list>
   </div>
 </div>

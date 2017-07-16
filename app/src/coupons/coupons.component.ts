@@ -1,54 +1,45 @@
 import {Component} from '@angular/core';
 import {Observable} from "rxjs/Observable";
+import 'rxjs/rx';
+
 import {Store} from '@ngrx/store';
-import {ItemsService} from '../common/services/coupons.service.ts';
+import {CouponsService} from '../common/services/coupons.service.ts';
 import {AppStore} from '../common/models/appstore.model';
-import {Coupon} from '../common/models/coupon.model';
+//import {Coupon} from '../common/models/coupon.model';
 import {ItemsList} from './coupons-list.component';
-import {ItemDetail} from './item-detail.component';
+
 
 @Component({
   selector: 'coupons',
   template: require('./coupons.component.html'),
   //styleUrls: [require('./coupons.component.css')],
-  providers: [ItemsService],
-  directives: [ItemsList, ItemDetail]
+  providers: [CouponsService],
+  directives: [ItemsList]
 })
 export class Coupons {
-  coupons: Observable<Array<Coupon>>;
-  selectedItem: Observable<any>;
+  coupons$: Observable<any>;
+  couponsFilter$: Observable<any>;
 
-  constructor(private itemsService: ItemsService,
+  constructor(private couponsService: CouponsService,
               private store: Store<AppStore>) {
-    this.coupons = itemsService.coupons;
-    this.selectedItem = store.select('selectedItem');
-    this.selectedItem.subscribe(v => console.log(v));
+    //this.coupons$ = couponsService.coupons;
+    this.coupons$ = store.select('coupons');
+    this.couponsFilter$ = store.select('couponsFilter');
+     var res$ = Observable.combineLatest(this.coupons$, this.couponsFilter$, (c,cF) => {
+       return 'c + cF';
+     });
+    res$.subscribe((x)=>{console.log(x)});
 
-    itemsService.loadItems();
+    couponsService.loadItems();
   }
 
-  resetItem() {
-    let emptyItem: Coupon = {id: null, name: '', description: ''};
-    this.store.dispatch({type: 'SELECT_ITEM', payload: emptyItem});
+
+  setFilter() {
+    this.store.dispatch({type: 'SET_FILTER', payload: {"audio":[], "category":[], "brands":["Codi", "Bouty"], "campaign_status":[]}});
   }
 
-  selectItem(item: Coupon) {
-    this.store.dispatch({type: 'SELECT_ITEM', payload: item});
+  orderCoupons($event){
+    this.store.dispatch({type: 'ORDER_COUPONS', payload: $event});
   }
 
-  saveItem(item: Coupon) {
-    this.itemsService.saveItem(item);
-
-    // Generally, we would want to wait for the result of `itemsService.saveItem`
-    // before resetting the current item.
-    this.resetItem();
-  }
-
-  deleteItem(item: Coupon) {
-    this.itemsService.deleteItem(item);
-
-    // Generally, we would want to wait for the result of `itemsService.deleteItem`
-    // before resetting the current item.
-    this.resetItem();
-  }
 }

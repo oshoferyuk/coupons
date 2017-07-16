@@ -1,13 +1,17 @@
+function keysrt(key,desc) {
+  return function(a,b){
+    return desc ? ~~(a[key] < b[key]) : ~~(a[key] > b[key]);
+  }
+}
+
 export const coupons = (state: any = [], {type, payload}) => {
   switch (type) {
-    case 'ADD_ITEMS':
+    case 'GET_COUPONS':
       return payload;
-    case 'CREATE_ITEM':
-      return [...state, payload];
-    case 'UPDATE_ITEM':
-      return state.map(item => {
-        return item.id === payload.id ? Object.assign({}, item, payload) : item;
-      });
+    case 'ORDER_COUPONS':
+      return state.sort(keysrt(payload, false));
+    case 'CREATE_COUPON':
+      return [...state,...payload];
     case 'DELETE_ITEM':
       return state.filter(item => {
         return item.id !== payload.id;
@@ -16,3 +20,5 @@ export const coupons = (state: any = [], {type, payload}) => {
       return state;
   }
 };
+
+
