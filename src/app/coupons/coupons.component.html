@@ -1,0 +1,5 @@
+<coupons-header (new)="createNewCoupon()"></coupons-header>
+<coupons-filter (filter)="filterCoupons($event)"></coupons-filter>
+<coupons-list [coupons]="coupons" (order)="orderCoupons($event)"></coupons-list>
+
+

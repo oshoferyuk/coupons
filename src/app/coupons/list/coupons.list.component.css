@@ -1,0 +1,3 @@
+ th {background-color: #33475A; color: white;}
+ table {border: 1px solid darkgray; width:100%;}
+ tr:nth-child(odd) {background: #eff0f4}
