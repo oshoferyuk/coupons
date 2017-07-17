@@ -3,7 +3,7 @@ import {Component, Output, EventEmitter} from '@angular/core';
 @Component({
   selector: 'coupons-filter',
   template: `
-    <div style="margin-top:10px;margin-right:100px;">
+    <div>
       <a (click)="filterCoupons('all')">All Campaigns</a>
       <a href="#" (click)="filterCoupons('upcoming')">Upcoming Campaigns</a>
       <a href="#" (click)="filterCoupons('active')">Active Campaigns</a>

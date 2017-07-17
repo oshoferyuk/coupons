@@ -4,18 +4,20 @@ import {Observable} from "rxjs/Observable";
 import 'rxjs/rx';
 import {Store} from '@ngrx/store';
 
-import {CouponsList} from './list/coupons.list.component';
-import { CouponsHeader } from './header/coupons.header.component';
-import { CouponsFilter } from './filter/coupons.filter.component';
 import {AppStore} from '../common/models/appstore.model';
 import {CouponsService} from '../common/services/coupons.service.ts';
 
 @Component({
   selector: 'coupons',
-  template: require('./coupons.component.html'),
+  //templateUrl: './coupons.component.html',
   //styleUrls: [require('./coupons.component.css')],
+  template: `
+    <coupons-header (new)="createNewCoupon()"></coupons-header>
+    <coupons-filter (filter)="filterCoupons($event)"></coupons-filter>
+    <coupons-list [coupons]="coupons" (order)="orderCoupons($event)"></coupons-list>
+  `,
   providers: [CouponsService],
-  directives: [CouponsList, CouponsHeader, CouponsFilter]
+  //directives: [CouponsList, CouponsHeader, CouponsFilter]
 })
 export class Coupons {
   coupons = []; //Coupon[];

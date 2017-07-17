@@ -23,10 +23,14 @@ module.exports = {
     ],
     loaders: [
       { test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [ /\.(spec|e2e)\.ts$/ ] },
-      { test: /\.html$/, loader: 'raw' }
+      { test: /\.html$/, loader: 'raw' },
+      {test: /\.scss/, loader: 'css-to-string-loader!css-loader!sass-loader'}
     ]
   },
   devServer: {
     historyApiFallback: true
   }
 };
+
+
+

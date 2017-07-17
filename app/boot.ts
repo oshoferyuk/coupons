@@ -16,6 +16,11 @@ import {App} from './src/app';
 import {Coupons} from './src/coupons/coupons.component';
 import {EditCoupon} from './src/editcoupon/coupon-edit.component';
 import {routes} from './routes';
+import {NgxPaginationModule} from 'ngx-pagination';
+
+import {CouponsList} from './src/coupons/list/coupons.list.component';
+import { CouponsHeader } from './src/coupons/header/coupons.header.component';
+import { CouponsFilter } from './src/coupons/filter/coupons.filter.component';
 
 @NgModule({
   imports: [
@@ -23,6 +28,7 @@ import {routes} from './routes';
     HttpModule,
     ReactiveFormsModule,
     FormsModule,
+    NgxPaginationModule,
     RouterModule.forRoot(routes),
     StoreModule.provideStore({coupons, couponsFilter}),
     StoreDevtoolsModule.instrumentStore({
@@ -33,7 +39,12 @@ import {routes} from './routes';
     }),
     StoreLogMonitorModule
   ],
-  declarations: [App, Coupons, EditCoupon],
+  declarations: [App,
+        Coupons,
+        EditCoupon,
+        CouponsList,
+        CouponsHeader,
+        CouponsFilter],
   //providers: [GadgetService],
   providers: [],
   bootstrap: [App]

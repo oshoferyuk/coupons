@@ -1,5 +1,6 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
 import {Coupon} from '../../common/models/coupon.model';
+declare var require: any;
 
 @Component({
   selector: 'coupons-list',
