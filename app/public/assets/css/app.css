@@ -2,7 +2,7 @@ body {
   background-color: whitesmoke;
 }
 .content .mdl-layout__header {
-  background-color: #263238;
+  background-color: #33475A;
 }
 .content .mdl-spinner {
   margin: 0 auto;
@@ -43,4 +43,2665 @@ body {
 }
 *:focus {
   outline: none;
+}
+
+
+/* ============================= RESET CSS =============================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+/* ============================ FLIPP CORP ============================ */
+html, body {
+  height: 100%;
+  /*overflow: auto;*/
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4b4f54;
+}
+p {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4b4f54;
+}
+
+p.clear {
+  clear: both;
+}
+
+a, a:link, a:visited, a:active {
+  color: #4b4b4b;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  text-decoration: none;
+}
+a:hover {
+  color:#166577;
+}
+img {
+  border: 0;
+}
+
+i { font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: #fff;
+  font-size: 42px;
+  line-height: 50px;
+}
+h2 {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: #fff;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+h3 {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+}
+h4 {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: #3a3c48;
+  font-size: 24px;
+  line-height: 30px;
+}
+h5 {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: #c1c1c1;
+  font-size: 18px;
+  line-height: 34px;
+}
+label {
+  font-size: 18px;
+  line-height: 45px;
+}
+.bold {
+  font-weight: 600 !important;
+}
+.button {
+  width: auto;
+  height: auto;
+  background-color: #00c6d7;
+  border:0px solid #00c6d7;
+  color: #fff !important;
+  display: inline-block;
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  bottom: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  color: #fff !important;
+  background-color: #154056;
+}
+.button:link {color:#00c6d7;text-decoration:none;}
+.button:visited {color:#00c6d7;text-decoration:none;}
+.button:active {color:#fff;text-decoration:none;}
+
+.button-outline {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border:2px solid #00c6d7;
+  color: #00c6d7 !important;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  bottom: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-outline:hover {
+  color: #fff !important;
+  background-color: #00c6d7;
+}
+
+.small {
+  font-size: 13px;
+  padding: 6px 25px;
+  border-radius: 3px;
+}
+
+.large {
+  padding: 10px 30px;
+  margin: 30px;
+}
+
+.center {
+  text-align: center;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.container {
+  width: 100%;
+  max-width: 1145px;
+  height: auto;
+  margin: auto;
+}
+.content {
+  position: relative;
+}
+.visible {
+  visibility: visible !important;
+}
+
+
+
+/* =================================== HERO ================================= */
+
+
+
+.hero-container {
+  width: 1000px;
+  height: auto;
+  margin: 84px auto 0px auto;
+}
+
+.hero {
+  height: 585px;
+  width: 100%;
+  background: url(/images/flipp_corp/header_bg.png) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  top: -110px;
+}
+
+
+.nav {
+  width: 100%;
+  height: 75px;
+  padding: 0px 16px;
+  position: relative;
+  z-index: 99 !important;
+  top: 0;
+}
+
+.logo {
+  height: auto;
+  float: left;
+  margin-top:17px;
+}
+.nav-content {
+  width: 95%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 0px;
+  height: 75px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+
+}
+.nav ul {
+  float: right;
+  position: relative;
+  z-index: 99;
+}
+.nav li {
+  display: inline-block;
+  padding: 20px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav a {
+  color: #fff;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.nav a:link, .nav a:visited, .nav a:active {
+  text-decoration:none;
+}
+.nav a:hover {
+  text-decoration:none;
+  padding-bottom: 10px;
+}
+.nav-active{
+  font-family: 'Source Sans Pro';
+  font-weight:600 !important;
+}
+.nav-btn {
+  color: #fff;
+  background: #00c6d7;
+  padding: 10px 13px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.nav-btn:hover {
+  color: #fff;
+  background: #004967;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.hero-img {
+  bottom: -50px;
+  line-height: 0;
+  float: left;
+}
+.hero-img img {
+  position: relative;
+  width: 970px;
+  height: auto;
+  top: 70px;
+}
+.hero-info {
+  text-align: center;
+  top: 50px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+
+.hero-info p {
+  font-weight: 300;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p.caption {
+  margin-top: 0px;
+  color: white;
+  letter-spacing: 0px;
+  font-size: 12px;
+
+}
+
+.hero-info img {
+  margin-top: 15px;
+  margin-right: 8px;
+  height: auto;
+}
+
+
+.pre-section-heading {
+  color:#4b4f54;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  /*  font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;*/
+  padding: 15px 0;
+  text-align: center;
+}
+
+.section-heading {
+  color:#4b4f54;
+  font-family: 'Source Sans Pro';
+  /*    font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;*/
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 0 30px 0;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.pre-section-heading:after {
+  content: '';
+  position: absolute;
+  margin-top: 10px;
+  bottom: auto;
+  left: 50%;
+  height: 3px;
+  width: 30px;
+  margin-left: -15px;
+  display: block;
+  background-color: #00c6d7;
+}
+
+.section-heading-cta {
+  color: #4b4f54;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 15px 5px;
+  text-align: center;
+}
+
+/* ========= CAREERS HEADING ========== */
+
+.pre-careers-heading {
+  color:#4b4f54;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.pre-careers-heading:after {
+  content: '';
+  position: relative;
+  top: 10px;
+  bottom: auto;
+  left: 50%;
+  height: 3px;
+  width: 30px;
+  margin-left: -15px;
+  display: block;
+  background-color: #00c6d7;
+}
+
+.section-title {
+  color:#166577;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+
+
+/* ============================ SECONDARY NAV ========================== */
+
+
+.secondary-nav {
+  width: 100%;
+  height: 58px;
+  padding: 0px 16px;
+  position: absolute;
+  z-index: 10;
+  top: 455px;
+  background: #fff;
+  border-bottom:1px solid #f2f2f2;
+}
+
+
+.secondary-nav-content {
+  width: 95%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2px 0px;
+  height: 57px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color:#4b4f54;
+
+}
+.secondary-nav ul {
+  text-align: center;
+}
+.secondary-nav li {
+  display: inline-block;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.secondary-nav a {
+  color:#4b4f54;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: inline-block;
+  padding: 20px;
+}
+.secondary-nav a:link, .secondary-nav a:visited {
+  text-decoration:none;
+}
+.secondary-nav a:hover, .secondary-nav a:active {
+  color:#00c6d7;
+  text-decoration:none;
+  cursor: pointer;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.secondary-nav-active{
+  font-family: 'Source Sans Pro';
+  font-weight:600 !important;
+  border-bottom: 3px solid #00c6d7;
+}
+
+/*.secondary-nav-active:after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    bottom: auto;
+    height: 3px;
+    width: 60px;
+    display: block;
+    background-color: #00c6d7;
+}*/
+
+/* ================================ REBRAND MSG ============================= */
+
+
+#rebrand-msg {
+  height: auto;
+  width: 70%;
+  padding: 0px 0 10px 0;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#rebrand-msg b {
+  font-weight:600;
+}
+
+/* ================================ HOW IT WORKS ============================= */
+
+
+#howitworks {
+  height: auto;
+  float: left;
+  padding: 0px 0 50px 0;
+}
+
+#howitworks .icons {
+  text-align: center;
+}
+
+#howitworks .icon img{
+  color: #ccc;
+  vertical-align: top;
+  width:54px;
+  height: auto;
+}
+
+#howitworks hr {
+  border: none;
+  border-bottom: 3px solid #ddd;
+  color: #ccc;
+  width: 22%;
+  display: inline-block;
+  clear: none;
+  margin: 30px;
+}
+
+.one-third {
+  padding: 0 15px 0 25px;
+  position: relative;
+  width: 33%;
+  height:auto;
+  float:left;
+  text-align: center;
+}
+
+.one-third .last{
+  padding: 0 0px 0 25px;
+}
+
+.one-third h3 {
+  color:#166577;
+  text-align: center;
+  font-size:16px;
+  line-height: 18px;
+}
+
+.one-third p {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+.one-third img {
+  width:300px;
+  height:auto;
+  text-align: center;
+}
+
+#retail_network .one-third p, #retail_services .one-third p {
+  height: 155px;
+}
+
+
+/* ================================== FOOTER ================================= */
+
+
+#footer {
+  height: auto;
+  float: left;
+  display: block;
+  padding: 50px 0 50px 0;
+  background: #2d3a43;
+  color:#fff;
+}
+
+
+.one-four {
+  padding: 0 5px 0 15px;
+  position: relative;
+  width: 25%;
+  height:auto;
+  float:left;
+}
+
+.one-four .last{
+  padding: 0 0px 0 25px;
+}
+
+.one-four h3 {
+  color:#fff;
+  font-size:16px;
+}
+
+.one-four p {
+  padding: 0 0 5px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.one-four .footer-logo {
+  width:100px;
+  height:auto;
+}
+
+.one-four .social {
+  margin-top:3px;
+  margin-right:5px;
+}
+
+.one-four .button {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border:2px solid #00c6d7;
+  color: #00c6d7 !important;
+  display: inline-block;
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+  font-size: 13px;
+  padding: 6px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  bottom: 0px;
+  margin: 10px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.one-four .button:hover {
+  color: #fff !important;
+  background-color: #00c6d7;
+}
+
+#copyright {
+  height: auto;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  background: #242e36;
+  color:#fff;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+}
+
+#copyright a {
+  color:#fff;
+  text-decoration: none;
+}
+
+#copyright a:hover {
+  color:#00c6d7;
+  text-decoration: none;
+}
+
+.getsocial {
+  margin-bottom: 3px;
+}
+
+.getsocial a {
+  margin-right: 5px;
+}
+
+.getsocial .last {
+  margin-right: 0;
+}
+
+
+/* ============================= RETAIL PLATFORM ============================= */
+
+#retail_platform {
+  height: auto;
+  float: left;
+  display: block;
+}
+
+#retail_platform .text {
+  position: relative;
+  width: 600px;
+  text-align: center;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+#section-one, #media-section-one {
+  position: relative;
+  width:100%;
+  background: #f2f2f2;
+  height: auto;
+  float: left;
+  padding: 50px 0 0 0;
+  display: block;
+}
+
+#section-one .text , #media-section-one .text {
+  position: relative;
+  width:400px;
+  float:left;
+  margin: 70px 0 0 50px;
+}
+
+.retailsection-bgone, #media-section-one img {
+  float:right;
+  width: 680px;
+  height: auto;
+}
+
+
+#section-two {
+  width:100%;
+  min-height: 500px;
+  background: url('/images/flipp_corp/retail_section2.jpg') no-repeat center bottom;
+  height: auto;
+  float: left;
+  padding: 50px 0 0 0;
+  display:block;
+}
+
+#section-two .text {
+  position: relative;
+  width:600px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.retailsection-bgtwo {
+  position: relative;
+  margin:auto;
+  text-align:center;
+  width: 680px;
+  height: auto;
+  left: 20%;
+  bottom: -5px;
+}
+
+
+#section-three {
+  position: relative;
+  width:100%;
+  background: #f2f2f2;
+  height: auto;
+  float: left;
+  padding: 50px 0 0 0;
+  display: block;
+}
+
+#section-three .text {
+  position: relative;
+  width:395px;
+  float:left;
+  margin: 70px 0 0 50px;
+}
+
+#section-three img {
+  float:right;
+  width: 680px;
+  height: auto;
+}
+
+.media-allretailers {
+  margin-top: 100px;
+}
+
+
+
+
+
+/* ============================= RETAIL LOGOS / SERVICES ========================= */
+
+#retail_partners {
+  height: auto;
+  float: left;
+  display: block;
+  padding: 50px 0 50px 0;
+}
+
+#retail_partners img {
+  width: 175px;
+  height: auto;
+  margin: 10px;
+}
+
+
+#retail_network, #retail_services {
+  height: auto;
+  float: left;
+  display: block;
+  padding: 50px 0 50px 0;
+  border-top:1px solid #f2f2f2;
+}
+
+#retail_contact {
+  height: auto;
+  float: left;
+  display: block;
+  padding: 50px 0 50px 0;
+  border-top:1px solid #f2f2f2;
+  margin: auto;
+  text-align: center;
+}
+
+#retail_network .line, #retail_services .line {
+  border-right: 1px solid #bdbdbd;
+}
+
+#retail_contact h2 {
+  padding-bottom: 0px;
+}
+
+#retail_partners .container {
+  text-align: center;
+}
+.fade-container {
+  display: inline-block;
+  width: 215px;
+  height: 117px;
+  position: relative;
+}
+
+.fade-container img {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+/* ============================= MEDIA PLATFORM ============================= */
+
+#media-hero {
+  height: 540px;
+  width: 100%;
+  background: url(/images/flipp_corp/media-header_bg.png) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  margin-top: -110px;
+}
+
+.media {
+  margin-top:20px;
+  border-top:1px solid #f2f2f2;
+}
+
+.media-one{
+  width: 450px;
+}
+
+.media-one-img {
+  width: 600px;
+}
+
+#retail_platform .media-img {
+  width: 700px;
+  height:auto;
+  margin:auto;
+  position: relative;
+  top: 5px;
+  margin-left: -35px;
+  z-index: 2;
+}
+
+#retail_platform .media-flyerone, #retail_platform .media-flyertwo {
+  width: 250px;
+  visibility: hidden;
+  height: auto !important;
+}
+
+#retail_platform .media-flyertwo {
+  margin-left: -35px;
+}
+
+#section-four {
+  position: relative;
+  width:100%;
+  background: #fff;
+  height: auto;
+  float: left;
+  padding: 50px 0 0 0;
+  display: block;
+}
+
+#section-four .text {
+  position: relative;
+  width:395px;
+  float:right;
+  margin: 70px 0 0 50px;
+}
+
+.media-bgone {
+  float:left;
+  width: 680px;
+  height: auto !important;
+  position: relative;
+  z-index: 1;
+}
+.media-slideone {
+  width: 620px;
+  height: auto !important;
+  position: absolute;
+  z-index: 2;
+  left: 60px;
+  top: 30px;
+  visibility: hidden;
+}
+
+
+/* ============================= ABOUT US ============================= */
+
+
+#about {
+  height: 520px;
+  width: 100%;
+  background: url(/images/flipp_corp/about-header_bg.png) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  margin-top: -100px;
+}
+
+
+#about_info {
+  position: relative;
+  padding: 50px 0 40px 0;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+#about_info .text {
+  position: relative;
+  width:45%;
+  float: left;
+  margin: 20px 0px 0 40px;
+}
+
+#about_team {
+  height: auto;
+  float: left;
+  display: block;
+  padding: 0 0 50px 0;
+}
+
+#about_team img {
+  width: 250px;
+  height: auto;
+  margin: 5px;
+}
+
+.team_member {
+  width:25%;
+  float:left;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.team_title {
+  color: #166577;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.team_title p{
+  text-align: center;
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #4b4f54;
+}
+
+#about_investors {
+  height: auto;
+  float: left;
+  display: block;
+  padding: 50px 0 50px 0;
+  border-top: 1px solid #f2f2f2;
+  margin: auto;
+}
+
+#about_investors .text {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.investors_member {
+  width:20%;
+  float:left;
+  text-align: center;
+  margin:10px;
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.investors_member img {
+  width: 150px;
+  height: auto;
+  margin: 5px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
+
+.first {
+  margin-left: 18% !important;
+}
+
+
+#about_contact {
+  height: auto;
+  float: left;
+  display: block;
+  padding: 50px 0 50px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.one-third-box {
+  padding: 30px 25px;
+  position: relative;
+  width:25%;
+  height: 380px;
+  margin:12px;
+  float:left;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+}
+
+#about_contact .center{
+  margin-left: 10% !important;
+}
+
+.one-third-box h3 {
+  color:#4b4f54;
+  text-align: center;
+  font-size:16px;
+  line-height: 18px;
+}
+
+.one-third-box p {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+.one-third-box img {
+  text-align: center;
+  width:auto;
+  height:30px;
+  margin-bottom:20px;
+}
+
+/*.text-hover span.text-content {
+    position: absolute;
+    top: 90px;
+    left: 25px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: auto;
+    display: table;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.text-hover:hover .text-content {
+    opacity: 1;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.text-hover span.text-content span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 11px;
+    line-height: 14px;
+    padding:10px;
+}
+*/
+
+
+/* ============================= CONTACT US ============================= */
+
+#contact {
+  min-height: 520px;
+  width: 100%;
+  background: url(/images/flipp_corp/contact_bg.jpg) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  margin-top: -140px;
+}
+
+#contact .hero-info {
+  top: 120px;
+}
+
+.contact-message {
+  background: #fff;
+  padding: 50px 150px;
+  position: relative;
+  top: 240px;
+  text-align: center;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+#contact_form {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#contact_form .text {
+  position: relative;
+  width:48%;
+  float: left;/*
+    margin: 20px 0px 0 50px;*/
+  text-align: center;
+  height:200px;
+}
+
+#contact_form .indent {
+  text-align: right;
+}
+
+#contact_form .retailer {
+  display: none;
+}
+
+#retailer-contact-form {
+  margin: 0 auto;
+  width: 500px;
+}
+
+/*
+#contact_topic {
+    display: inline-block;
+    font-size: 18px;
+    background: #dcdcdc;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}*/
+
+#topic_selector select{
+  width:250px;
+  height: 50px;
+  padding: 10px;
+  border-radius:2px ;
+  border:1px solid #cbcbcb;
+  margin-left:20px;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  color:#006075;
+  font-size: 18px;
+  line-height: 24px;
+  text-indent: 5px;
+  background: #ffffff;
+  /*-webkit-appearance: none;
+  -moz-appearance: none;*/
+}
+
+.signup-input-boxes input {
+  width:80%;
+  height:40px;
+  text-indent: 20px;
+  margin: 0px 0px 10px 0px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size:16px;
+  color: #444444;
+}
+
+
+#contact_message {
+  width: 80%;
+  height:190px;
+  padding:20px;
+  text-indent: 10px;
+  border:1px solid #cbcbcb !important;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size:16px;
+  color:#444444;
+}
+
+#contact-submit {
+  text-align: center;
+  margin: auto;
+  margin-top:30px;
+  position: relative;
+}
+
+body .hs-form * {
+  font-family: 'Source Sans Pro' !important;
+  font-weight: normal !important;
+  font-weight: 300 !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .hs-form label {
+  color: rgb(75, 79, 84) !important;
+}
+.hs-form.stacked fieldset {
+  margin: 0px auto;
+  max-width: none;
+  width: 80%;
+}
+
+.hs_submit {
+  text-align: center;
+}
+
+body .hs-form .hs-button {
+  background: #1896b1;
+  width: 200px;
+  height: 50px;
+  line-height: 45px;
+  margin-bottom: 10px !important;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  padding: 5px 30px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box !important;
+}
+
+body .hs-form .hs-button:hover {
+  color: #fff !important;
+  background-color: #154056;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+body .hs-form .hs-button:focus {
+  color: #fff !important;
+  background-color: #1896b1;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+body .hs-form .hs-button:active {
+  color: #fff !important;
+  background-color: #154056 !important;
+  background-image: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+body .hs-form .hs-input {
+  height: 25px;
+  text-indent: 20px;
+  margin: 0px 0px 10px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+
+body .hs-form .hs-input:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+body .hs-form .hs-form-required {
+  display: none;
+}
+
+body .hs-form.stacked .field {
+  margin-bottom: 0px;
+}
+
+body .hs-form-radio input {
+  width: auto !important;
+}
+
+.submit {
+  background: #1896b1;
+  width: 200px;
+  height: 50px;
+  line-height: 45px;
+  margin-bottom:10px !important;
+}
+
+
+.contact_info {
+  color: #4b4f54;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact_info p{
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #4b4f54;
+  margin-bottom: 40px;
+}
+
+#contact_map {
+  position: relative;
+  width:100%;
+  min-height:500px;
+  background: #1896b1;
+  height: auto;
+  float: left;
+  padding: 0;
+  display: block;
+}
+
+#contact_map .address {
+  width:50%;
+  float:left;
+  color: #fff;
+  padding: 100px 0px 0px 145px;
+}
+
+#contact_map .address p {
+  margin-top:30px;
+  color: #fff;
+}
+
+#contact_map .address p b{
+  color: #fff;
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#contact_map .map {
+  width:50%;
+  float:left;
+  height:400px;
+}
+
+.desktop-map {
+}
+
+.mobile-map {
+  display: none;
+}
+
+
+
+/* ============================== CAREERS ============================= */
+
+
+#careers_home {
+  height: 490px;
+  width: 100%;
+  background: url(/images/flipp_corp/careers_bg.jpg) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  top: -90px;
+}
+
+.ops-bg {
+  background: url(/images/flipp_corp/teams_ops-bg.png) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.media-bg {
+  background: url(/images/flipp_corp/teams_media-bg.png) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.bizdev-bg {
+  background: url(/images/flipp_corp/teams_bizdev-bg.png) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.marketing-bg {
+  background: url(/images/flipp_corp/teams_marketing-bg.png) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.analytics-bg {
+  background: url(/images/flipp_corp/teams_analytics-bg.png) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.admin-bg {
+  background: url(/images/flipp_corp/teams_admin-bg.jpg) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.dev-bg {
+  background: url(/images/flipp_corp/teams_dev-bg.jpg) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.creative-bg {
+  background: url(/images/flipp_corp/teams_creative-header_bg.jpg) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+.product-bg {
+  background: url(/images/flipp_corp/teams_product-bg.jpg) no-repeat center 0 !important;
+  background-size: cover !important;
+}
+
+
+.careers_info {
+  text-align: center;
+  top: 90px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.charm-hero-copy {
+  top: 50px;
+}
+.charm-hero-copy h1 {
+  margin-bottom: 30px;
+}
+
+#careers_one {
+  float: left;
+  margin-top: 120px;
+}
+
+#careers_one .forty {
+  width:40%;
+  height:520px;
+  float:left;
+  margin-bottom:40px;
+  overflow: hidden;
+}
+
+#careers_one .forty p {
+  padding: 0px 30px;
+}
+
+#careers_one .forty p img{
+  width:150px;
+  height:auto;
+  margin: 10px 0;
+}
+
+#careers_one .sixty {
+  width:60%;
+  height:520px;
+  float:left;
+  margin-bottom:40px;
+  overflow: hidden;
+}
+
+#careers_one .sixty img{
+  height: auto;
+  width:100%;
+}
+
+#careers_one .full {
+  margin-bottom: 70px;
+}
+
+#careers_one .full img{
+  height: auto;
+  width:100%;
+}
+
+#careers_one .charm {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#careers_one .charm h2 {
+  padding-bottom: 10px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#careers_one .charm p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.charm-fix {
+  top: 615px;
+}
+
+.somanylogos {
+  width: 153px;
+  float: left;
+  height: 120px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.somanylogos img {
+  width: 100%;
+  height: auto;
+}
+
+.logos-full {
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  margin: auto;
+}
+
+.twentyfourteen {
+  display: none;
+}
+
+#careers_benefits {
+  width: 100%;
+  background: url(/images/flipp_corp/careers_benefits-bg.jpg) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+}
+
+.half {
+  width:50%;
+  float:left;
+  margin:40px 0;
+  padding:30px;
+}
+
+.benefit-wrapper {
+  width:100%;
+  position: relative;
+  margin:30px 0;
+}
+
+.half .benefit-icon {
+  float:left;
+  position: relative;
+  padding:0 30px 40px 0;
+  width: 105px;
+  height: 122px;
+}
+
+.half .benefit-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.half .benefit-info {
+  position: relative;
+  padding:0 10px;
+}
+
+.half .benefit-info p {
+  padding: 0px 20px 0 100px;
+  color: #fff;
+  font-size: 14.5px;
+}
+
+.half .benefit-info p b{
+  color: #fff;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 15px;
+  color: #00c6d7;
+}
+
+.benefit_desc {
+  background: #085f73;
+  width:100%;
+  padding:20px;
+}
+
+.benefit_desc .pre-careers-heading, .benefit_desc .section-heading {
+  color:#fff;
+  padding: 20px 0 0px 0;
+}
+
+.benefit_desc p {
+  color:#fff;
+  padding:0 30px 20px 30px;
+}
+
+#careers_job {
+  height: 520px;
+  width: 100%;
+  background: url(/images/flipp_corp/careers_jobs-bg.jpg) no-repeat center 0;
+  margin: auto;
+  position: relative;
+  float: left;
+  padding-top: 50px;
+}
+
+
+#culture_info {
+  position: relative;
+  float: left;
+}
+
+#culture_info .text {
+  position: relative;
+  width:45%;
+  float: left;
+  margin: 20px 0px 50px 40px;
+}
+
+#culture_info .groups {
+  position: relative;
+  width: 45%;
+  float: left;
+  margin: 0px 0px 30px 30px;
+}
+
+#culture_section-one {
+  height: 350px;
+  width: 100%;
+  background: url(/images/flipp_corp/culture_bg1.png) no-repeat center 0;
+  background-size: 1390px;
+  margin: auto;
+  position: relative;
+  float: left;
+  padding-top: 50px;
+}
+
+#culture_section-one .section-title, #culture_section-one p {
+  color:#fff;
+}
+
+#culture_section-one .growth {
+  left: 16%;
+  margin: -40px 0px;
+  width: 45%;
+  position: relative;
+
+}
+
+#culture_section-two {
+  width: 100%;
+  height: 460px;
+  background: url(/images/flipp_corp/culture_bg2.png) no-repeat center top;
+  background-position: 0px -35px;
+  /*background-size: cover;*/
+  background-size: 100%;
+  margin: auto;
+  position: relative;
+  float: left;
+}
+
+#culture_section-two .office {
+  padding: 60px 100px 30px 30px;
+  width: 42%;
+  margin:0;
+}
+
+#careers_principles {
+  min-height: 300px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  float: left;
+  padding-top: 50px;
+  margin-bottom:50px;
+}
+
+#careers_principles .text {
+  position: relative;
+  width:600px;
+  text-align: center;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+#careers_principles-expand {
+  width: 100%;
+  background: url(/images/flipp_corp/careers_benefits-bg.jpg) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  display: none;
+}
+
+#careers_principles-expand .section-heading {
+  color:#fff;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+#culture_pic {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  float: left;
+  background: #dbdbdb;
+}
+
+#culture_pic .one {
+  width:100%;
+  height: 250px;
+  position:relative;
+  float:left;
+  overflow:hidden;
+  background: url(/images/flipp_corp/culture_office1.png) no-repeat center 0 #ffffff;
+}
+
+#culture_job, #dribbble {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  float: left;
+  padding-top: 50px;
+  margin-bottom:50px;
+}
+
+#careers_video {
+  width: 700px;
+  height: 393px;
+  margin: auto;
+}
+
+#careers_video img {
+  width: 100%;
+  height: auto;
+  cursor: auto;
+}
+
+.greyline {
+  border-top: 1px solid #f2f2f2;
+}
+
+#culture_section-three {
+  width: 100%;
+  height: 460px;
+  background: url(/images/flipp_corp/culture_office2.png) no-repeat center top #ffffff;
+  margin: auto;
+  position: relative;
+  float: left;
+}
+
+#culture_section-three .awards {
+  float: right;
+  padding: 30px 30px 30px 40px;
+  margin: 0px 0;
+  width: 680px;
+}
+
+#culture_section-three .awards .section-title,
+#culture_section-three .awards .pre-careers-heading,
+#culture_section-three .awards p {
+  color:#fff;
+}
+
+#culture_section-three .awards img {
+  width: 190px;
+  height: auto;
+  padding-top: 20px;
+  margin-right: 15px;
+}
+
+.flipp_teams {
+
+}
+
+.flipp_teams img{
+  width:100%;
+  height:auto;
+}
+
+.ball {
+  float: left;
+  position: relative;
+  top: -50px;
+  left: 30px;
+}
+
+.indent-left {
+  position: relative;
+  margin-left: 50px;
+  /*left: 50px;*/
+  top: 10px;
+}
+
+.float-right {
+  float:right;
+  margin-top:10px;
+}
+
+#culture_info span {
+  color: #166577;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#culture_info .wrap {
+  width: 380px;
+  left: 50px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+/* ============================== TEAMS ============================= */
+
+#team_info {
+  float: left;
+}
+
+.team_wrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+
+#team_info .one-third {
+  margin: 30px 10px;
+  padding: 0 15px;
+  position: relative;
+  width: 30%;
+  height:auto;
+  float:left;
+  background: #1c829b;
+}
+
+#team_info .one-third p{
+  margin: 0 0 15px 0;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height:auto;
+  float:left;
+  background: #fff;
+  color: #4b4f54;
+  text-align: left;
+  min-height: 300px;
+  font-size: 14px;
+}
+
+
+#team_info .one-half {
+  margin: 30px 5px 30px 10px;
+  padding: 0 15px;
+  position: relative;
+  width: 48%;
+  height:auto;
+  float:left;
+  background: #1c829b;
+}
+
+#team_info .one-half p{
+  margin: 0 0 15px 0;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height:auto;
+  float:left;
+  background: #fff;
+  color: #4b4f54;
+  text-align: left;
+  min-height: 220px;
+  font-size: 14px;
+}
+
+
+#team_info .one-third h2, #team_info .one-half h2 {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 37px 0 0px 0;
+  min-height: 60px;
+}
+
+#team_section-one {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  float: left;
+  padding-top: 0px;
+}
+
+#team_section-one img {
+  width:100%;
+  height:auto;
+}
+
+
+#team_section-two {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  float: left;
+  padding-top: 50px;
+}
+
+#team_section-two .facts {
+  width:33%;
+  position:relative;
+  float:left;
+  text-align:left;
+  margin-bottom:30px;
+}
+
+#team_section-two .facts-ico{
+  float:left;
+  position:relative;
+  margin:0px 20px 180px 20px;
+}
+
+#team_section-two img {
+  width:50px;
+  height:50px;
+}
+
+#team_section-two .facts-text{
+  padding:0px 30px 0 10px;
+}
+
+#team_section-two .facts-text p {
+  font-size:14px;
+}
+
+#team_section-two .facts-text b{
+  font-weight: 600;
+}
+
+#team_quotes {
+  width: 100%;
+  background: url(/images/flipp_corp/careers_benefits-bg.jpg) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  padding: 50px 0;
+  margin-top:50px;
+
+}
+
+#team_quotes .pre-careers-heading, #team_quotes .section-heading {
+  color: #fff;
+}
+
+.quotes-three{
+  width: 33%;
+}
+
+.quotes-center {
+  left:20%;
+  position: relative;
+}
+
+
+.team_headshot {
+  width: 120px;
+  height: auto;
+  margin: 5px;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  border: 5px solid #fff;
+}
+
+
+.asdf {
+  width:20%
+}
+
+.desktop-quotes {
+}
+
+.mobile-quotes {
+  display: none;
+}
+
+.mobile-quotes .one-four b{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#dribbble .shots li {
+  width: 32%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  display: block;
+  float: left;
+}
+#dribbble .shots li img {
+  width: 100%;
+}
+
+/* ========================= Team Job Postings ======================= */
+.job-postings {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.job-postings .one-third-box {
+  float: none;
+  display: inline-block;
+  height: auto;
+  vertical-align: top;
+  min-height: 150px;
+}
+.one-third-box p {
+  padding: 20px 0 10px 0;
+}
+
+
+/* ========================= Lever Job Postings ======================= */
+.lever-job-postings p {
+  margin: 0 0 1em 0;
+  line-height: 1.4em;
+}
+.lever-job-postings * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.lever-job-postings section {
+  position: relative;
+  padding: 30px;
+}
+.lever-job-postings .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.lever-job-postings .job {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 40px 30px;
+}
+.lever-job-postings h1 {
+  font-size: 48px;
+  color: #454545;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+.lever-job-postings .job-title {
+  font-size: 24px;
+  text-decoration: none;
+  color: #454545;
+}
+
+.lever-job-postings .job-title:hover {
+  color: #00c6d7;
+}
+
+.lever-job-postings .tags span {
+  color: #999;
+  font-size: 12px;
+  color: grayMediumDark;
+}
+.lever-job-postings .tags span:after {
+  content: ', ';
+}
+.lever-job-postings .tags span:last-of-type:after {
+  content: '';
+}
+.lever-job-postings .description {
+  color: #999;
+}
+.lever-job-postings .btn {
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border:1px solid #00c6d7;
+  color: #00c6d7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #ffffff;
+}
+.lever-job-postings .btn:hover {
+  color: #fff;
+  background-color: #00c6d7;
+}
+.lever-job-postings .btn.active {
+  color: #fff;
+  background-color: #00c6d7;
+}
+.lever-job-postings .jobs-teams {
+  margin-bottom: 40px;
+  padding: 0 30px
+}
+.lever-job-postings .jobs-teams .btn {
+  margin: 0 8px 8px 0;
+}
+.lever-job-postings .jobs-teams .btn:first-of-type {
+  margin-left: 0;
+}
+.lever-job-postings .jobs-teams .btn:last-of-type {
+  margin-right: 0;
+}
+
+
+/* ============================== FIXES ============================= */
+.retailsection-slideone {
+  position: absolute;
+  margin-top: 90px;
+  width: 500px;
+  height: auto;
+  visibility: hidden;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.retailer-content-imgone, .retailer-content-imgtwo, .retailer-content-imgthree, .retailsection-pinone, .retailsection-pintwo, .retailsection-pinthree  {
+  visibility: hidden;
+}
+
+.retailer-content-imgtwo {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.retailer-content-imgthree {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.retailsection-pinone {
+  position: absolute;
+  width: 100%;
+  width: 174px;
+  height: auto;
+  bottom: 145px;
+  left: 23%;
+  z-index: 2;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.retailsection-pintwo {
+  position: absolute;
+  width: 261px;
+  bottom: 100px;
+  height: auto;
+  left: 39%;
+  z-index: 4;
+}
+
+.retailsection-pinthree {
+  position: absolute;
+  width: 167px;
+  height: auto;
+  bottom: 145px;
+  left: 63%;
+  z-index: 3;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+}
+
+#about .hero-container {
+  padding-top: 40px;
+}
+
+#footer a:link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#footer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#footer a:active {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+#jobs-container .jobs-teams {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.media-pre-img {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+#jobs-container .jobs-teams {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+#about_contact .one-third-box p {
+  height: 160px;
+}
+
+#about .hero-info {
+  width: 90%;
+}
+#about .content-imgone {
+  width: 230px;
+  margin-top: 50px;
+}
+#about .content-imgtwo {
+  width: 180px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+#about .content-imgthree {
+  width: 230px;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+
+#careers_one .section-heading, #culture_info .section-heading, #team_info .section-heading, #team_section-two .section-heading, #team_quotes .section-heading, #culture_job .section-heading, #careers_benefits .section-heading, #careers_job .section-heading, #careers_principles .section-heading, #dribbble .section-heading {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+
+/* ============================== ANIMATIONS ============================= */
+
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(120%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(120%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+.slideDown {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+
+  visibility: visible !important;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-30%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.slideLeft {
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+
+  visibility: visible !important;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+
+.slideRight {
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+
+/* LEGAL LAYOUTÂ */
+#legal {
+  z-index: 0;
+  width: 100%;
+}
+#legal .container {
+  width: 70%;
+  padding-bottom: 150px;
+  padding-top: 70px;
+}
+#legal h1, #legal h2, #legal h3, #legal p, #legal ul, #legal ol {
+  color: #444444;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#legal h1 {
+  font-size: 36px;
+}
+#legal h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#legal li {
+  list-style-type: disc;
+  text-indent: 5px;
+  margin-left: 20px;
+}
+#legal-title {
+  position: relative;
+  margin-top: -90px;
+  width: 100%;
+  height: 300px;
+  background: #1c829b;
+  display: inline-block;
+  padding: 135px 0 100px 0;
+  text-align: center;
+}
+#legal-title h1 {
+  margin-bottom: 10px;
+}
+#legal-title a {
+  color: #00c6d7;
+}
+#legal b {
+  font-weight:bold;
+}
+#legal .more {
+  margin-left:100px !important;
+}
+#legal li {
+  margin-bottom: 20px;
+}
+
+
+/* ============================= THANK YOU PAGE ============================= */
+
+#thankyou {
+  min-height: 520px;
+  width: 100%;
+  background: url(/images/flipp_corp/contact_bg.jpg) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  margin-top: -140px;
+}
+
+#thankyou-white {
+  position: relative;
+  padding: 30px 0 30px 0;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+#thankyou .hero-info h1:after {
+  content: '';
+  position: absolute;
+  margin-top: 10px;
+  bottom: auto;
+  left: 50%;
+  height: 3px;
+  width: 30px;
+  margin-left: -15px;
+  display: block;
+  background-color: #00c6d7;
+}
+
+#thankyou .hero-info p {
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#thankyou .hero-info {
+  top: 120px;
+}
+
+#thankyou .contact-message {
+  background: #fff;
+  padding: 50px 150px;
+  position: relative;
+  text-align: center;
+}
+
+#thankyou .message {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.ty-social {
+  width: 45px;
+  height: 45px;
+}
+
+/* ============================= PATENTS PAGE ============================= */
+
+#patents {
+  min-height: 520px;
+  width: 100%;
+  background: url(/images/flipp_corp/contact_bg.jpg) no-repeat center 0;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  float: left;
+  margin-top: -140px;
+  padding-bottom: 70px;
+}
+
+#patents .hero-info {
+  top: 120px;
+}
+
+.patents-list {
+  background: #fff;
+  padding: 40px 50px;
+  margin-top: 150px;
+  width: 100%;
+}
+.patents-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.patents-container center {
+  font-weight: bold;
+}
+.patents-container p {
+  margin-bottom: 20px;
+}
+.patents-list p:first-child {
+  margin-bottom: 20px;
+}
+
+#legal #toc a {
+  color: #1c829b;
 }

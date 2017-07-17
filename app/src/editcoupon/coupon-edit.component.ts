@@ -18,7 +18,7 @@ export class EditCoupon {
               private store: Store<AppStore>) {}
   createNew(){
     let coupon = {
-      "id":23,
+      "id":Math.floor(Math.random()*100),
       "image": "new ima",
       "offerID": "PG100001199",
       "type": "PrintNEW",
@@ -28,7 +28,7 @@ export class EditCoupon {
       "end_date":"April 30,2018",
       "category":"HouseholdNEW",
       "Activation Limit":"0/359",
-      "status":"UpcommingNEW"
+      "status":"upcoming"
     };
     this.couponsService.createItem(coupon);
   }

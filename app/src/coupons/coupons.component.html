@@ -1,10 +1,11 @@
-<a [routerLink]="['new']">new</a>
+<coupons-header (new)="createNewCoupon()"></coupons-header>
+<coupons-filter (filter)="filterCoupons($event)"></coupons-filter>
 
 <h5>Filter:</h5>
 <button (click)="setFilter()">Set Filters</button>
 <div class="mdl-grid coupons">
   <div class="mdl-cell mdl-cell--6-col">
-    <coupons-list [coupons]="coupons$ | async"
+    <coupons-list [coupons]="coupons"
                   (order)="orderCoupons($event)">
     </coupons-list>
   </div>
