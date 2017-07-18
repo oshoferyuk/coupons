@@ -11,11 +11,13 @@ import {CouponsService} from '../common/services/coupons.service';
   selector: 'coupons',
   //templateUrl: './coupons.component.html',
   //styleUrls: [require('./coupons.component.css')],
-  template: `
-    <coupons-header (new)="createNewCoupon()"></coupons-header>
-    <coupons-filter (filter)="filterCoupons($event)"></coupons-filter>
-    <coupons-list [coupons]="coupons" (order)="orderCoupons($event)"></coupons-list>
-  `,
+  templateUrl: './coupons.component.html',
+  styleUrls: ['./coupons.component.css'],
+  //template: `
+    //<coupons-header (new)="createNewCoupon()"></coupons-header>
+    //<coupons-filter (filter)="filterCoupons($event)"></coupons-filter>
+    //<coupons-list [coupons]="coupons" (order)="orderCoupons($event)"></coupons-list>
+  //`,
   providers: [CouponsService],
   //directives: [CouponsList, CouponsHeader, CouponsFilter]
 })

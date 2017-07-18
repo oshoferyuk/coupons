@@ -43,17 +43,17 @@
     "@angular/router": "~4.2.0",
     "@angular/tsc-wrapped": "~4.2.0",
     "@angular/upgrade": "~4.2.0",
-    "angular-in-memory-web-api": "~0.3.2",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.1.0",
-    "systemjs": "0.19.39",
-    "zone.js": "0.8.12",
     "@ngrx/core": "^1.2.0",
     "@ngrx/store": "^2.2.3",
     "@ngrx/store-devtools": "^3.2.4",
     "@ngrx/store-log-monitor": "^3.0.2",
+    "angular-in-memory-web-api": "~0.3.2",
+    "core-js": "^2.4.1",
     "lodash": "4.12.0",
-    "ngx-pagination": "^3.0.1"
+    "ngx-pagination": "^3.0.1",
+    "rxjs": "^5.1.0",
+    "systemjs": "0.19.39",
+    "zone.js": "0.8.12"
   },
   "devDependencies": {
     "@types/angular": "^1.5.16",

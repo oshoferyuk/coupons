@@ -17,11 +17,13 @@ declare var require: any;
         <th (click)="toggleOrder('category')">Category</th>
         <th>Limit</th><th>status</th>
       </tr>
-      <tr *ngFor="let item of coupons" (click)="selected.emit(item)">
+      <tr *ngFor="let item of coupons | paginate: { itemsPerPage: 3, currentPage: p }" (click)="selected.emit(item)">
         <td>{{item.image}}</td><td>{{item.offerID}}</td><td>{{item.type}}</td><td>{{item.brand}}</td><td>{{item.description}}</td><td>{{item.start_date}}</td><td>{{item.end_date}}</td><td>{{item.category}}</td><td>{{item.limit}}</td><td>{{item.status}}</td>
       </tr>
     </table>
-  `
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  `,
+  styleUrls: ['./coupons.list.component.css'],
 })
 export class CouponsList {
   @Output('order') order = new EventEmitter();

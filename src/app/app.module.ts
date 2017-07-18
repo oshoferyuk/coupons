@@ -19,7 +19,7 @@ import {HttpModule} from '@angular/http';
 
 import {Coupons} from './coupons/coupons.component';
 import {EditCoupon} from './editcoupon/coupon-edit.component';
-//import {NgxPaginationModule} from 'ngx-pagination';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 import {CouponsList} from './coupons/list/coupons.list.component';
 import { CouponsHeader } from './coupons/header/coupons.header.component';
@@ -33,7 +33,7 @@ import { CouponsFilter } from './coupons/filter/coupons.filter.component';
     HttpModule,
     ReactiveFormsModule,
     FormsModule,
-    //NgxPaginationModule,
+    NgxPaginationModule,
     routing,
     StoreModule.provideStore({coupons, couponsFilter}),
     StoreDevtoolsModule.instrumentStore({
